@@ -18,7 +18,7 @@ readonly PACKAGE_WAR_NAME=""    #定义产出的war包名,必填项
 #最终的抽包路径为$OUTPUT/webapps/$PACKAGE_DIR_NAME/$PACKAGE_WAR_NAME
 ###########################################
 
-if [[ "${PACKAGE_WAR_NAME}" == "" ]];then
+if [[ "${PACKAGE_WAR_NAME}" == "blog" ]];then
     echo "Please set "PACKAGE_WAR_NAME" value"
     exit 1
 fi
