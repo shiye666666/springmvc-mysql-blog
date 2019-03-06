@@ -21,9 +21,9 @@ Prompt "Clean and Package"
 mvn clean -U package -Dmaven.test.skip=true || exit $?
 
 Prompt "Package for deploy"
-rm -fr $WORKSPACE/output
+#rm -fr $WORKSPACE/output
 ls $WORKSPACE
-ls $WORKSPACE/target
+ls $WORKSPACE/output
 ls $WORKSPACE/target/blog-1.0.0-BUILD-SNAPSHOT/
 
 mv $OUTPUT ./
