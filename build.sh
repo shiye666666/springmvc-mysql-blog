@@ -1,5 +1,4 @@
 #!/bin/bash
-
 set -eu
 Prompt(){
 	echo "[$(date '+%D %H:%M:%S')] $@"
@@ -37,4 +36,7 @@ curl http://172.22.132.84/hawkeye-deps/jdk-8u111-linux-x64.tar.gz > $WORKSPACE/o
 
 Prompt "build finish exit:"$?
 
-exit $?
+
+
+
+
