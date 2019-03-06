@@ -15,7 +15,7 @@ export LANG="en_US.UTF-8"
 Prompt "Setting up environment variables OK..."
 
 
-OUTPUT=$WORKSPACE/target/blog-1.0.0-BUILD-SNAPSHOT/output
+OUTPUT=$WORKSPACE/target
 
 Prompt "Clean and Package"
 mvn clean -U package -Dmaven.test.skip=true || exit $?
@@ -26,7 +26,7 @@ ls $WORKSPACE
 ls $WORKSPACE/output
 ls $WORKSPACE/target/blog-1.0.0-BUILD-SNAPSHOT/
 
-mv $OUTPUT ./
+cp -r $OUTPUT ./output
 
 mkdir $WORKSPACE/output/opbin
 
