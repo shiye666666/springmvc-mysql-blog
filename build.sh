@@ -21,6 +21,9 @@ mvn clean -U package -Dmaven.test.skip=true || exit $?
 
 Prompt "Package for deploy"
 rm -fr $WORKSPACE/output
+ls $WORKSPACE
+ls $WORKSPACE/target
+
 mv $OUTPUT ./
 
 mkdir $WORKSPACE/output/opbin
