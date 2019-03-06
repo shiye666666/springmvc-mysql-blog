@@ -1,3 +1,4 @@
+
 #!/bin/bash
 set -eu
 Prompt(){
@@ -23,6 +24,7 @@ Prompt "Package for deploy"
 rm -fr $WORKSPACE/output
 ls $WORKSPACE
 ls $WORKSPACE/target
+ls $WORKSPACE/target/blog-1.0.0-BUILD-SNAPSHOT/
 
 mv $OUTPUT ./
 
